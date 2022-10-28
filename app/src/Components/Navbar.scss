@@ -1,0 +1,38 @@
+
+.navbar {
+    padding-top: 2.5rem;
+    .logo {
+        p {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        li p{
+            cursor: pointer;
+            border-bottom: 2px transparent solid;
+                padding-bottom: 0.5rem;
+                transition: border-color 0.5s;
+                cursor: pointer;
+                &:hover {
+                        border-color: #ccc;
+    
+                }
+        }
+        li:nth-child(2)  {
+            ul li {
+                padding: 0 2rem;
+            }
+        }
+        li:nth-child(3){
+            ul li {
+                padding: 0 1rem;
+            }
+        }
+    }
+
+}

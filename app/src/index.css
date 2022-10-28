@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Pacifico&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
