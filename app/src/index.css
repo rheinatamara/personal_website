@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700&family=Noto+Serif+JP:wght@200;300;400;500;600;700&family=Pacifico&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing:border-box;
 }
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Serif JP', serif;
   line-height: 1.6;
   background: #fff;
 }
@@ -24,4 +24,23 @@ ul {
   padding: 0 1.5rem;
   margin: auto;
   overflow: hidden;
+}
+.serif-font {
+  font-family: 'Noto Serif JP', serif;
+}
+.sans-serif-font {
+  font-family: 'Noto Sans', sans-serif;
+}
+.font-small {
+  font-size: 0.8rem;
+}
+.font-large {
+  font-size: 3rem;
+}
+.bold {
+  font-weight: 600;
+}
+.secondary-color {
+  color: #cecece
+
 }

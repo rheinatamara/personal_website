@@ -7,12 +7,12 @@ export default () => {
     return (
         <div class="navbar">
                <ul>
-                    <li class="logo"><p>Rheina</p></li>
-                    <li>
+                    <li className="logo"><p>Rheina</p></li>
+                    <li classNane="main-nav">
                         <ul>
-                            <li><p><Link activeClass="active" smooth spy to="header-content">About Me</Link></p></li>
-                            <li><p><Link activeClass="active" smooth spy to="works">Works</Link></p></li>
-                            <li><p><Link activeClass="active" smooth spy to="contact">Contact</Link></p></li>
+                            <li><p><Link activeClass="active" smooth spy to="header-content">ABOUT ME</Link></p></li>
+                            <li><p><Link activeClass="active" smooth spy to="works">WORKS</Link></p></li>
+                            <li><p><Link activeClass="active" smooth spy to="contact">CONTACT</Link></p></li>
                         </ul>
                     </li>
                     <li>
