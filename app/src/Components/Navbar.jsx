@@ -11,7 +11,7 @@ export default () => {
                     <li classNane="main-nav">
                         <ul>
                             <li><p><Link activeClass="active" smooth spy to="header-content">ABOUT ME</Link></p></li>
-                            <li><p><Link activeClass="active" smooth spy to="works">WORKS</Link></p></li>
+                            <li><p><Link activeClass="active" smooth spy to="work-experience">WORKS</Link></p></li>
                             <li><p><Link activeClass="active" smooth spy to="contact">CONTACT</Link></p></li>
                         </ul>
                     </li>

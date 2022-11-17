@@ -10,6 +10,7 @@ import node from '../../img/node.png'
 import html from '../../img/html.png'
 import figma from '../../img/figma.png'
 import css from '../../img/css.png'
+// import { ReactComponent as Background } from '../../img/background.svg';
 // eslint-disable-next-line
 export default () => {
    
@@ -29,6 +30,8 @@ return (
                             Based in New York
                         </h1>
                     </div>
+                    <div className="background-pattern"/>
+                    <div className="background-pattern-2"/>
                     <div className="content">
                         <div className="left-side-content">
                             <ul>
@@ -48,13 +51,15 @@ return (
                                 </div>
                             </ul>
                         </div>
+                        
                         <div className="photo">
                             <img src={myPhoto} alt="" />
                         </div>
+                        
                         <div className="right-side-content">
                             <ul>
                                 <li><p className="sans-serif-font bold secondary-color font-small">YEARS OF EXPERIENCE</p></li>
-                                <li><p className="bold font-large">2</p></li>
+                                <li><p className="bold font-large">1</p></li>
                             </ul>
                             <ul>
                             <li><p className="sans-serif-font bold secondary-color font-small">CONTACT</p></li>
@@ -77,7 +82,7 @@ return (
                     </div>
                 </section>
                 <section id="technical-skills">
-                    <h1>My Technical Skills</h1>
+                    <h1 className="title">My Technical Skills</h1>
                         <div className="skills">
                             <div className="js">
                                 <img src={js} alt="" />
@@ -112,6 +117,9 @@ return (
                                 <p>Figma</p>
                             </div>
                         </div>
+                </section>
+                <section id="work-experience">
+                    <h1 className="title">My Work Experience</h1>
                 </section>
             </div>
         </div>

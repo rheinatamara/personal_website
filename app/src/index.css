@@ -44,3 +44,9 @@ ul {
   color: #cecece
 
 }
+.title {
+  text-align: center;
+  padding-bottom: 5rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
