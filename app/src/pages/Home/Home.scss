@@ -1,12 +1,13 @@
 $primary-color: #cecece;
 $secondary-color: #e7ece7;
 $tertiary-color: #f3f3f3;
+$dark-color : rgb(150, 150, 150);
 #header-home {
     height: 100vh;
     #header-content{
-        padding-top: 4rem;
-        padding-bottom: 5rem;
-        border-bottom: 2px solid $secondary-color;
+        padding-top: 3rem;
+        padding-bottom: 7rem;
+        border-bottom: 1px solid $dark-color;
         .title {
             margin: 0 auto;
             text-align: center;
@@ -83,6 +84,7 @@ $tertiary-color: #f3f3f3;
             }
             .photo {
                 margin: 0 auto;
+                margin-top: -5rem;
 
             img {
                 width: 25rem;
@@ -96,9 +98,9 @@ $tertiary-color: #f3f3f3;
         }
     }
     #technical-skills {
-        padding-top: 5rem;
-        border-bottom: 1px solid #e7ece7;
-        padding-bottom: 5rem;
+        padding: 7rem 0;
+        border-bottom: 1px solid $dark-color;
+       
       
         .skills {
             display: grid;
@@ -164,7 +166,95 @@ $tertiary-color: #f3f3f3;
 
     }
     #work-experience {
-        padding-top: 5rem;
+        padding: 10rem 0;
+        border-bottom: 1px solid $dark-color;
+
+        // lines
+         ul li {
+            list-style: none;
+            position: relative;
+            width: 1px;
+            margin: 0 auto;
+            padding-top: 50px;
+            background: $primary-color;
+            height: 250px;
+            // dots
+            &:after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    width: 15px;
+                    height: 15px;
+                    // border: 1px solid #000;
+                    background: inherit;
+                    transform: translateX(-50%);
+                    border-radius: 50%;
+                    // transition: background 0.5s ease-in-out;
+            }
+            // Boxes
+            div {
+                position: relative;
+                bottom: 0;
+                width: 400px;
+                padding: 1rem;
+            }
+            // right side
+            div {
+                left: 140px;
+                transform: translate(50px, 0);
+                top: -70px;
+                
+            }
+            .left-side {
+                left: -480px;
+                transform: translate(-200px, 0);
+                top: -230px;
+                
+            }
+            .second-child, .third-child {
+                // color: red;
+                // top: -230px;
+            }
+           
+          }
+          
+       
+
     }
+    #latest-projects {
+        // padding: 5rem 10rem 0;
+        padding: 7rem 0  12rem 0;
+        border-bottom: 1px solid $dark-color;
+        a, a:active, a:focus {
+            outline: none;
+        }
+        img {
+            width : 100%;
+            padding-bottom: 2rem;
+            cursor: pointer; 
+        }
+        .projects .group {
+            padding: 1rem;
+            padding-bottom: 2rem;
+            h6 {
+                font-size: 1.3rem;
+            }
+            
+        }
+        div:focus-visible {
+            outline: none;
+        }
+        
+      }
+      #testimonials {
+        padding: 15rem 0  7rem 0;
+        .group {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+    
+        
+      }
 
 }

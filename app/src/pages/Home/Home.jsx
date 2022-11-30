@@ -10,18 +10,46 @@ import node from '../../img/node.png'
 import html from '../../img/html.png'
 import figma from '../../img/figma.png'
 import css from '../../img/css.png'
-// import { ReactComponent as Background } from '../../img/background.svg';
+import Fade from 'react-reveal/Fade';
+import Slider from "react-slick";
+import img1 from '../../img/items/item1.png'
+import img2 from '../../img/items/item2.png'
+import img3 from '../../img/items/item3.png'
+import img4 from '../../img/items/item4.png'
+import { Scrollbar } from "smooth-scrollbar-react";
+
+
 // eslint-disable-next-line
 export default () => {
-   
+
+    let settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 2
+      };
+      let settings2 = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
 return (
-    <div>
-        <div id="header-home">
-            <div className="container">
+    <Scrollbar
+        plugins={{
+          overscroll: {
+            effect: 'glow',
+          },
+        }}>
+    <div className="container">
+         
+        <div id="header-home" >
+            <div className="home-container">
                 <Navbar/>
                 <section id="header-content">
                     <div className="title">
-                        <h1>Rheina Tamara
+                        <h1 >Rheina Tamara
                         <Typewriter options={{
                                     strings: ['Front end Developer', 'Artist', 'UI/UX Designer'],
                                     autoStart: true,
@@ -120,9 +148,138 @@ return (
                 </section>
                 <section id="work-experience">
                     <h1 className="title">My Work Experience</h1>
+                    <ul>
+                    <li>
+                        <Fade right>
+                            <div>
+                                <h3>Full Stack Developer</h3>
+                                <p>
+                                    
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+                                eum assumenda architecto, perspiciatis itaque maiores ex rerum
+                                libero provident!
+
+                                </p>
+                            </div>
+                        </Fade>
+                        <Fade left>
+                            <div className="left-side third-child">
+                                <h3> Whitebox ID, Indonesia</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+                                    eum assumenda architecto, perspiciatis itaque maiores ex rerum
+                                    libero provident!
+                                </p>
+                            </div>
+          
+                        </Fade>
+                    </li>
+                    <li>
+                        <Fade right>
+                            <div>
+                                <h3>
+                                    Frontend Engineer
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+                                    eum assumenda architecto, perspiciatis itaque maiores ex rerum
+                                    libero provident!
+                                </p>
+                            </div>
+                        </Fade>
+                           <Fade left>
+                            <div className="left-side second-child">
+                                <h3> Prixa.ai, Indonesia</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+                                    eum assumenda architecto, perspiciatis itaque maiores ex rerum
+                                    libero provident!
+                                </p>
+                            </div>
+          
+                        </Fade>
+                    </li>
+                    <li>
+                        <Fade right>
+                            <div>
+                                <h3> Freelance Frontend Developer</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+                                    eum assumenda architecto, perspiciatis itaque maiores ex rerum
+                                    libero provident!
+                                </p>
+                            </div>
+                        </Fade>
+                        <Fade left>
+                      
+                            <div className="left-side third-child"  >
+                                <h3> Self-Employed / Freelance, USA</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+                                    eum assumenda architecto, perspiciatis itaque maiores ex rerum
+                                    libero provident!
+                                </p>
+                            </div>
+          
+                        </Fade>
+                            
+                    </li>
+                  </ul>
+                </section>
+                <section id="latest-projects" >
+                    <h1 className="title">My Latest Projects</h1>
+                    <div className="projects" data-cursor-text="Drag">
+                        <Slider {...settings}>
+                            <div className="group">
+                                <img src={img1} alt="" />
+                                <p className="sans-serif-font color-light font-thin">Web Design</p>
+                                <h6 className="sans-serif-font color-dark font-normal">World Experience</h6>
+                            </div>
+                            <div  className="group">
+                                <img src={img2} alt="" />
+                                <p className="sans-serif-font color-light font-thin">Mobile app development</p>
+                                <h6 className="sans-serif-font color-dark font-normal">Face the Experience</h6>
+                            </div>
+                            <div  className="group">
+                            <img src={img3} alt="" />
+                            <p className="sans-serif-font color-light font-thin">Web Application</p>
+                           <h6 className="sans-serif-font color-dark font-normal">Restaurant App</h6>
+                            </div>
+                            <div  className="group">
+                            <img src={img4} alt="" />
+                            <p className="sans-serif-font color-light font-thin">Web development</p>
+                            <h6 className="sans-serif-font color-dark font-normal">FriendFeed</h6>
+
+                            </div>
+                        </Slider>
+                    </div>
+                   
+                </section>
+                <section id="testimonials" data-cursor-text="Drag">
+                <Slider {...settings2} >
+                    <div>
+                        <h1 className="title">"Rheina and I work together on several different projects at Prixa.ai, I'm lucky to call her my partner. She consistently gives everything 100 per cent for the team and she's always willing to lend a hand to anyone who needs it. Her ability to overcome challenges with a smile makes her stand out."</h1>
+                        <div className="group">
+                            <h3>Ibrahim Tarigan</h3>
+                            <p>Software Engineer at Delman Data Lab</p>
+                        </div>
+              
+                    </div>
+                    <div>
+                    <h1 className="title">"Rheina is the best person to work with, always interactive and always being supportive. Working with rheina was a pleasure, always on time for work and very ethical. God job rheina!"</h1>
+                        <div className="group">
+                        <h3>Wulan Dilla Akpa</h3>
+                            <p>Quality Assurance at Blue Bird Group</p>
+
+                        </div>
+                       
+                    </div>
+                   
+                </Slider>
                 </section>
             </div>
         </div>
     </div>
+    </Scrollbar>
  )
 }
