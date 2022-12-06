@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 function App() {
  
   return (
-    
     <Routes>
     <Route path="/" element={<Home />} />
   </Routes>

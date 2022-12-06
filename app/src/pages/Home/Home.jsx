@@ -35,6 +35,7 @@ export default () => {
         slidesToShow: 1,
         slidesToScroll: 1,
       }
+    //   let url=["https://github.com/rheinatamara", "https://www.linkedin.com/in/rheinatamara/"];
 return (
     <Scrollbar
         plugins={{
@@ -277,6 +278,37 @@ return (
                    
                 </Slider>
                 </section>
+                <section id="contact">
+                <div>
+                    <h2 className="title">Contact Me</h2>
+                    <p className="lead">Here is how you can reach me</p>
+                <form >
+                    <div className="text-fields">
+                        <input type="text" className="text-input name-input" placeholder="Name" name="name"></input>
+                        <input type="text" className="text-input subject-input" placeholder="Subject" name ="subject"></input>
+                        <input type="email" className="text-input email-input" placeholder="Email Address" name ="email"></input>
+                        <input type="text" className="text-input phone-input" placeholder="Phone" name="phone"></input>
+                        <textarea className="text-input message-input" placeholder="Enter Message" name="message"></textarea>
+                        </div>
+                        <div class="container">
+                  
+                    <button type="submit" class="button">Submit</button>
+                    </div>
+                </form>
+                </div>
+
+                </section>
+                {/* <section id="footer">
+                  
+                    <p className="sans-serif-font">&copy; 2022 RHEINA. ALL RIGHTS RESERVED</p>
+                    <p className="sans-serif-font">RHEINA.TAMARA@OUTLOOK.COM</p>
+                    <div className="group">
+                    <a href={url[0]} rel="noreferrer noopener" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                    <a href={url[1]} rel="noreferrer noopener" target="_blank"> <i class="fab fa-linkedin fa-lg"></i></a> 
+                    </div>
+                </section> */}
+
+                
             </div>
         </div>
     </div>

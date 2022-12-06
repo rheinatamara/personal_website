@@ -1,5 +1,6 @@
 import './Navbar.scss'
 import { Link } from "react-scroll";
+import logo from '../img/logo.png'
 
 // eslint-disable-next-line
 export default () => {
@@ -8,7 +9,7 @@ export default () => {
     return (
         <div class="navbar">
                <ul>
-                    <li className="logo"><p>Rheina</p></li>
+                    <li className="logo"><img src={logo} alt="" /></li>
                     <li classNane="main-nav">
                         <ul>
                             <li><p><Link activeClass="active" smooth spy to="header-content">ABOUT ME</Link></p></li>

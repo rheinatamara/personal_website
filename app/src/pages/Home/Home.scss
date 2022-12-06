@@ -249,12 +249,82 @@ $dark-color : rgb(150, 150, 150);
       }
       #testimonials {
         padding: 15rem 0  7rem 0;
+        border-bottom: 1px solid $dark-color;
         .group {
             text-align: center;
             padding-bottom: 2rem;
         }
     
         
+      }
+      #contact {
+        padding: 7rem 0  7rem 0;
+        width: 100%;
+        border-bottom: 1px solid $dark-color;
+        .lead {
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+        .title {
+            padding-bottom: 1rem;
+        }
+      input:focus {
+        outline: none;
+      }
+        .text-fields {
+            display: grid;
+            grid-template-areas: "name email" "subject phone" "message message";
+            grid-gap: 1.2rem;
+            margin-bottom: 1.2rem;
+            .name-input {
+                grid-area: name;
+            }
+            .subject-input {
+                grid-area: subject;
+            }
+            .email-input {
+                grid-area: email;
+            }
+            .message-input {
+                grid-area: message;
+                height: 100px;
+              }
+              .text-input {
+                padding: 0.5rem 1rem;
+              }
+             
+
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+        .button {
+            
+            width: 50%;
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            transition: all 0.5s;
+            border: none;
+            cursor: pointer;
+            margin-top: 2rem;
+        
+        }
+       
+       
+      }
+      #footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding-top: 1.2rem;
+        a {
+            &:nth-child(1){
+                padding-right: 2rem;
+            }
+        }
       }
 
 }

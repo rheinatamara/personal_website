@@ -1,12 +1,9 @@
 
 .navbar {
-    padding-top: 2.5rem;
-    .logo p {
+    padding-top: 2rem;
+    .logo img{
        
-            font-family: 'Pacifico', cursive;
-            font-size: 1.5rem;
-            cursor: pointer;
-            border-bottom: none;
+            width: 2.2rem;
             padding-bottom: 0.5rem;
 
        
@@ -34,7 +31,7 @@
                     }
             }
             i {
-                padding-bottom: 0.5rem;
+                padding-bottom: 1rem;
             }
 
         }
